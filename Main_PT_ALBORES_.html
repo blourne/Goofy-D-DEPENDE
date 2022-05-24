@@ -1,0 +1,159 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COMP MAIN PT ALBORES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Ryle Albores</label>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#goals in life">Goals in life</a></li>
+        <li><a href="#talents and favorite game">Talents and favorite games</a></li>
+      </ul>
+    </nav>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="home" id="home" style="font-size: 50px;"><p><b>WELCOME</p></b>
+    </div>
+    </section>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="about" id="about" style="font-size: 35px;"><p><b>About me</p></b>
+        <p> Hello i'm Ryle Elgene G. Albores from grade 9-Kowalski i am 15 years old i started schooling at DBTC since i was grade 1.<p>
+    </div>
+    </section>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="talents and favorite game" id="talents and favorite game" style="font-size: 35px;"><p><b>Talents and favorite games</p></b>
+        <p>My Goals in Life is to finish school to achieve my dream job, i also want to travel around the world to explore other places. to be successful is one of the best goals in my life, and becoming an inspiration to others. The one thing i can help from my family is to finish school and achieve my dream job to provide them there needs in the future.  </p>
+    </div>
+    </section>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="talents and favorite game" id="talents and favorite game" style="font-size: 35px;"><p><b>Talents and favorite games</p></b>
+        <p>Some of my Talents are playing sports like basketball and badminton, my other talents are researching, writing, and art. I also have 2 favorite mobile games and that would be Mobile Legends and PUBG, i like playing mobile games during my free time to enjoy my self. </p>
+    </div>
+    </section>
+  </body>
+</html>
+
+<style>
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: black;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background: linear-gradient(to top, white 0%, Red 100%);
+}
+nav{
+  /* fixed keyword is fine too */
+  position: sticky;
+   top: 0;
+   z-index: 100;
+  background: linear-gradient(to bottom, white 0%, Red 100%);
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: Blue;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: Yellow;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  
+}
+
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: Blue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: White;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+</style>
